@@ -1,0 +1,12 @@
+doctype html
+html(lang="en")
+  body
+    p Submit a file to view it's file size.
+    form(
+        action="/getFileSize" 
+        method="post"
+        enctype="multipart/form-data"
+    )
+        input(type="file" name="file")
+        input(type="submit")
+      
